@@ -22,3 +22,16 @@ $ auto-mysql-backup -d [database_name] -u [user_name] -p [password] -l [/path/to
 ```
 $ auto-mysql-backup -d [database_name] -u [user_name] -p [password] -i [/path/to/public/ssh/key] -l [username@hostname:/path/to/backup/directory/]
 ```
+
+### Using cron jobs
+
+First, define your frequency. You can use https://crontab.guru/ to create one. For example, every 1:00am, run `crontab -e` and insert:
+
+```
+0 1 * * * auto-mysql-backup ...
+```
+
+
+## Thanks to
+
+ - Pasquale
