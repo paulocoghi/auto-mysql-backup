@@ -7,7 +7,7 @@ Created specially to my friend, Pasquale.
 ```
 $ wget https://raw.githubusercontent.com/paulocoghi/auto-mysql-backup/master/auto-mysql-backup.sh
 $ chmod +x auto-mysql-backup.sh
-$ mv auto-mysql-backup.sh /usr/bin/auto-mysql-backup
+$ sudo mv auto-mysql-backup.sh /usr/bin/auto-mysql-backup
 ```
 
 ## Instructions
