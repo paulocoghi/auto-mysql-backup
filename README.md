@@ -37,6 +37,8 @@ And insert:
 0 1 * * * auto-mysql-backup ...
 ```
 
+> *the first column is the **minute**, the second is the **hour**, the third is the **day***, the fourth is the **month** and the fifth is the **day of week** (0-6)
+
 
 ## Thanks to
 
