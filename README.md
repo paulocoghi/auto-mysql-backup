@@ -18,7 +18,7 @@ $ mv auto-mysql-backup.sh /usr/bin/auto-mysql-backup
 $ auto-mysql-backup -d [database_name] -u [user_name] -p [password] -l [/path/to/backup/directory/]
 ```
 
-### Local database with remote backup *(via ssh)*
+### Local database with remote backup *(via scp/ssh)*
 
 ```
 $ auto-mysql-backup -d [database_name] -u [user_name] -p [password] -i [/path/to/public/ssh/key] -l [username@hostname:/path/to/backup/directory/]
