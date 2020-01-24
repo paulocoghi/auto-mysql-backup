@@ -2,6 +2,10 @@
 Shell script to create MySQL backups. Can be used manually or via cron jobs.
 Created specially to my friend, Pasquale.
 
+PRs are welcome! If you want to contribute, let's make this tool the best one to MySQL backups, together!
+
+For support, just open an issue!
+
 ## Installation
 
 ```
