@@ -1,5 +1,6 @@
 # auto-mysql-backup
-Shell script to create MySQL backups. Can be used manually or via cron jobs
+Shell script to create MySQL backups. Can be used manually or via cron jobs.
+Created specially to my friend, Pasquale.
 
 ## Installation
 
@@ -39,6 +40,15 @@ And insert:
 
 > *the first column is the **minute**, the second is the **hour**, the third is the **day***, the fourth is the **month** and the fifth is the **day of week** (0-6)
 
+### Removing old backups
+
+You can add another cron job to erase backups that are **X** days old, that can run before the backup *(for example, one hour before)*, with the line:
+
+```
+0 0 * * * find /path/to/backup/directory/ -mindepth 1 -type f -mtime +5 -delete
+```
+
+> *in this example, the **+5** is specifying that files older than **5 days** must be deleted*
 
 ## Thanks to
 
