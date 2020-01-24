@@ -27,7 +27,9 @@ $ auto-mysql-backup -d [database_name] -u [user_name] -p [password] -i [/path/to
 
 First, define your frequency. You can use https://crontab.guru/ to create one. For example, every 1:00am, run:
 
-```crontab -e```
+```
+$ crontab -e
+```
 
 And insert:
 
