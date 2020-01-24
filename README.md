@@ -35,7 +35,7 @@ $ crontab -e
 And insert:
 
 ```
-0 1 * * * auto-mysql-backup ...
+0 1 * * * auto-mysql-backup -d [database_name] -u [user_name] -p [password] -l [/path/to/backup/directory/] > /dev/null 2>&1
 ```
 
 > *the first column is the **minute**, the second is the **hour**, the third is the **day***, the fourth is the **month** and the fifth is the **day of week** (0-6)
